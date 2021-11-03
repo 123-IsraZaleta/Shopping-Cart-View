@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 90%;
+	max-width: 1500px;
+	margin: auto auto;
+	padding: 1rem;
+    color: #12203e;
+    
+}
+
+.container .table{
+    text-align: center;
+}
+
+.table td, th { 
+    border: 1px solid; 
+}
+.main .table {
+    border-collapse: collapse;
+}
+
+.table td, th { 
+    width: 15rem; 
+    height: 3rem; 
+}
+
+.table th {
+    background-color: black;
+    color: #fff;
+}
+
+.table td {
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+.table .buttonDetail {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.table .buttonDetail:hover {
+    font-size: 1.1rem;
+}
+
+.main .article {
+    margin-top: 1rem;
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .buttonAdd {
+    height: 2.8rem;
+    width: 10rem;
+    background-color: #12203e;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.article .buttonPay {
+    height: 2.8rem;
+    width: 10rem;
+    background-color: #1E8449;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+/*--------------------------------<AddForm /> STYLES---------------------------*/
+
+.formAdd {
+    padding: 1rem 25rem 1rem 25rem;
+}
+
+/*------------------------------------ Modal -----------------------------------*/
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 720px;
+    max-width: 580px;
+    outline: none;
+    padding: 20px;
+}
+
+.mainModal {
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainModal h4 {
+    text-align: start;
+    margin-top: -1rem;
+}
+.mainModal h5 {
+    text-align: end;
+    margin-bottom: 1rem;
+
+}
+
+.mainModal .buttonClose {
+    height: 2.8rem;
+    border-radius: 6px;
+    background-color: #17a2b8;
+    color: white;
+}
+
+.buttonClose:hover {
+    color: rgb(223, 219, 219);
+}
